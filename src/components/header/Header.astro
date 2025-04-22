@@ -1,16 +1,27 @@
 ---
-import '../../styles/global.css';
+import "../../styles/global.css";
 ---
 
-<header  class="">
-  <h1>
-    <a href="">Juan Andres Tuberquia Delgado</a>
+<header class="">
+  <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+    <a href="/">Juan Andres Tuberquia</a>
   </h1>
-  <h2>Front-end Developer</h2>
-  <p>I'm a front-end developer with a passion for creating user-friendly and accessible websites.</p>
-  <nav class="text-2xl font-bold no-underline gap-4  flex flex-col items-start px-5 pt-3 text-right">
-    <a href="/about">About</a>
-    <a href="/">Experience</a>
-    <a href="/blog">Projects</a>
+  <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
+    Front-end Developer
+  </h2>
+  <p class="mt-4 max-w-xs leading-normal text-slate-400" >
+    I'm a front-end developer with a passion for creating user-friendly and
+    accessible websites.
+  </p>
+  <nav class="mt-16 w-max flex flex-col gap-y-5">
+    <a
+      href="/about"
+      class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
+      >About</a
+    >
+    <a   class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200" 
+    href="/">Experience</a>
+    <a   class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200" 
+    href="/blog">Projects</a>
   </nav>
 </header>
