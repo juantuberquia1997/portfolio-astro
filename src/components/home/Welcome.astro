@@ -3,9 +3,10 @@
 import './styles.css';
 import Header from '../header/Header.astro';
 import Networks from '../SocialNetworks/Networks.astro';
+import Experience from '../experience/Experience.astro';
 ---
 
-<div id="container">
+<div id="container" class="flex">
 	<div>
 		<h1>
 			<a href="">Juan Andres Tuberquia Delgado</a>
@@ -17,8 +18,12 @@ import Networks from '../SocialNetworks/Networks.astro';
 	</div>
 	
 	<div>
-
-	</div>
+		<section class="mb-16" id="about">
+			<p>I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.
+			</p>
+		</section>
+		<Experience />
+		</div>
 	<!-- <img id="background" src={background.src} alt="" fetchpriority="high" /> -->
 
 </div>
