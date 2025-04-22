@@ -1,8 +1,28 @@
 ---
-import Welcome from '../components/home/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import About from "../components/about/About.astro";
+import Experience from "../components/experience/Experience.astro";
+import Header from "../components/header/Header.astro";
+import Projects from "../components/projects/Projects.astro";
+import Networks from "../components/SocialNetworks/Networks.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <div class="flex">
+    <div>
+      <Header />
+      <Networks />
+    </div>
+    <div>
+      <About />
+      <Experience />
+      <Projects />
+    </div>
+  </div>
 </Layout>
+
+<!-- <style>
+	#container {
+  font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+}
+</style> -->
