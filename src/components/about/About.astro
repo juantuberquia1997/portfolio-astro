@@ -1,10 +1,10 @@
 ---
-import MiBoton from "../MiBoton/MiBoton.tsx";
+import Intersection from "../../utils/Intersection.tsx";
 ---
 
 <section class="mb-16 scroll-mt-10" id="about">
   <h2 class="sticky top-0 z-20 bg-slate-900/75 pr-6 py-5  backdrop-blur text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only lg:hidden">About</h2>
-  <MiBoton client:only />
   <p>I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.
   </p>
+  <Intersection client:only element={"#about"} tagMenu={"#menu-about"} threshold={1}/>
 </section>
