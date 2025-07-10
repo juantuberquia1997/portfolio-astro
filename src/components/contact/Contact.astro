@@ -1,0 +1,39 @@
+---
+import Intersection from "../../utils/Intersection";
+---
+<section id="contact" class="border-t-2 border-t-gray-400 scroll-mt-5">
+  <h2
+    class="sticky top-0 z-20 bg-slate-900/75 pr-6 py-5 backdrop-blur text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only lg:hidden"
+  >
+    Contact
+  </h2>
+  <ul>
+    <li
+    class="mb-8 gap-x-10 cursor-pointer transition-all duration-200 rounded-lg lg:px-6 py-6 hover:lg:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+  >
+      <div>
+        <h3
+          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+          aria-label="Contact"
+        >
+          Contact
+        </h3>
+        <div class="mt-4 gap-y-4 flex flex-col">
+          <div class="flex gap-2">
+            <img src="https://res.cloudinary.com/dsdjwe2lp/image/upload/v1751922220/svgexport-1_eqbfhu.svg"  alt="icon location" width="28" > 
+            <span> Medellin, Antioquia</span>
+          </div>
+          <div class="flex gap-2">
+            <img src="https://res.cloudinary.com/dsdjwe2lp/image/upload/v1751922221/svgexport-2_sx9gm8.svg" alt="icon phone" width="28"> 
+            <span> (+57) 3185861827</span>
+          </div>
+          <div class="flex gap-2">
+            <img src="https://res.cloudinary.com/dsdjwe2lp/image/upload/v1751922026/svgexport-3_nxjo3u.svg" alt="icon email" width="30"> 
+            <a href="mailto:tuberquiaa@gmail.com" aria-label="tuberquiaa@gmail.com" title="tuberquiaa@gmail.com" class="underline">tuberquiaa@gmail.com</a>
+          </div>
+      </div>
+
+  </li>
+  </ul>
+  <Intersection client:only element={"#contact"} tagMenu={"#menu-contact"} threshold={0.8} />
+</section>
